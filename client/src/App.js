@@ -1,9 +1,9 @@
-import './App.css';
+import Header from "./layout/Header/Header";
 
 const App = () => {
   return(
     <div>
-      Ryznrd
+      <Header />
     </div>
   )
 }
