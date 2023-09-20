@@ -1,4 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Skranji:wght@400;700&display=swap");
 header {
-  background-color: gray;
-  color: white;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  font-family: "Roboto";
+  display: flex;
+  justify-content: space-around;
+}
+header .companyName {
+  font-family: "Skranji";
+}
+header nav {
+  margin: auto 0;
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style-type: none;
+  margin: 10px;
+  font-size: 18px;
 }/*# sourceMappingURL=styles.css.map */

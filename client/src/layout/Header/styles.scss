@@ -1,4 +1,25 @@
+@import "../../variables/Variables.scss";
+
 header {
-    background-color: gray;
-    color: white;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto";
+    display: flex;
+    justify-content: space-around;
+
+    .companyName {
+        font-family: "Skranji";
+    }
+
+    nav {
+        margin: auto 0;
+        ul {
+            display: flex;
+            li {
+                list-style-type: none;
+                margin: 10px;
+                font-size: $font-medium;
+            }
+        }
+    }
 }
