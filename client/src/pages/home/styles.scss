@@ -8,12 +8,17 @@
     }
 
     .sectionGalleryPreview {
+        width: 100%;
+        // background-color: $black-extra-light;
+        text-align: center;
         .galleryPreviewList {
             @include flex(row, true);
+            gap: 25px;
 
             img {
                 @include imageDefault();
                 cursor: pointer;
+            
             }
         }
     }

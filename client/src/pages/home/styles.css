@@ -8,14 +8,21 @@
 .pages_home .homePageLogo {
   border-radius: 50%;
 }
+.pages_home .sectionGalleryPreview {
+  width: 100%;
+  text-align: center;
+}
 .pages_home .sectionGalleryPreview .galleryPreviewList {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  gap: 25px;
 }
 .pages_home .sectionGalleryPreview .galleryPreviewList img {
   width: 250px;
-  border-radius: 20px;
+  height: 300px;
+  box-shadow: 0 0 5px 3px #666666;
+  border-radius: 25px;
   cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */
