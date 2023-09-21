@@ -1,0 +1,9 @@
+@import "../../variables/Variables";
+
+.pages_home {
+    @include flex(column, true);
+
+    .homePageLogo {
+        border-radius: 50%;
+    }
+}

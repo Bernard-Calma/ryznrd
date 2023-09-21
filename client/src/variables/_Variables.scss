@@ -22,7 +22,11 @@ $font-small: 14px;
     align-items: center;
 }
 
-@mixin flex($direction) {
+@mixin flex($direction, $center: false) {
     display: flex;
     flex-direction: $direction;
+    @if $center {
+        justify-content: center;
+        align-items: center;
+    }
 }

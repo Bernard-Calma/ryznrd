@@ -1,4 +1,4 @@
-@import "./variables/Variables.scss";
+@import "./variables/Variables";
 
 body {
   margin: 0;
@@ -16,6 +16,7 @@ code {
 
 .app {
   @include flex(column);
+  min-height: 100vh;
 }
 
 header {
@@ -46,10 +47,16 @@ header {
   }
 }
 
+main {
+  @include flex(column);
+  flex: 1;
+}
+
 
 footer {
   @include flexCenter();
   background-color: $black-regular;
   color: $text-color-reverse;
   font-family: "Roboto";
+  font-size: $font-small;
 }
