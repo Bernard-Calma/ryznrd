@@ -2,9 +2,9 @@ const Navigation = () => {
     return(
         <nav>
             <ul className="navList">
-                <li className="navListItem">Home</li>
-                <li className="navListItem">Contact</li>
-                <li className="navListItem">About</li>
+                <a className="navListItem">Home</a>
+                <a className="navListItem">Contact</a>
+                <a className="navListItem">About</a>
             </ul>
         </nav>
     )

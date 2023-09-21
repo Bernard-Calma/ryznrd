@@ -1,8 +1,8 @@
 @import "../../variables/Variables.scss";
 
 header {
-    background-color: black;
-    color: rgb(255, 255, 255);
+    background-color: $black-dark;
+    color: $text-color-reverse; 
     font-family: "Roboto";
     display: flex;
     justify-content: space-around;
@@ -15,10 +15,14 @@ header {
         margin: auto 0;
         ul {
             display: flex;
-            li {
+            a {
                 list-style-type: none;
                 margin: 10px;
                 font-size: $font-medium;
+                cursor: pointer;
+                &:hover {
+                    color: $black-extra-light
+                }
             }
         }
     }
