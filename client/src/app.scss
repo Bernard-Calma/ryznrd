@@ -1,0 +1,55 @@
+@import "./variables/Variables.scss";
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.app {
+  @include flex(column);
+}
+
+header {
+  background-color: $black-dark;
+  color: $text-color-reverse; 
+  font-family: "Roboto";
+  display: flex;
+  justify-content: space-around;
+
+  .companyName {
+      font-family: "Skranji";
+  }
+
+  nav {
+      margin: auto 0;
+      ul {
+          display: flex;
+          a {
+              list-style-type: none;
+              margin: 10px;
+              font-size: $font-medium;
+              cursor: pointer;
+              &:hover {
+                  color: $black-extra-light
+              }
+          }
+      }
+  }
+}
+
+
+footer {
+  @include flexCenter();
+  background-color: $black-regular;
+  color: $text-color-reverse;
+  font-family: "Roboto";
+}

@@ -13,3 +13,16 @@ $text-color-reverse: white;
 $font-large: 24px;
 $font-medium: 18px;
 $font-small: 14px;
+
+
+
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex($direction) {
+    display: flex;
+    flex-direction: $direction;
+}
