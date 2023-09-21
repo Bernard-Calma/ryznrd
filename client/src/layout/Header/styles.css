@@ -23,4 +23,12 @@ header nav ul a {
 }
 header nav ul a:hover {
   color: #666666;
+}
+
+footer {
+  background-color: #333333;
+  color: white;
+  font-family: "Roboto";
+  text-align: center;
+  padding: 5px 0;
 }/*# sourceMappingURL=styles.css.map */
