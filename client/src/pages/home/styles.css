@@ -7,4 +7,15 @@
 }
 .pages_home .homePageLogo {
   border-radius: 50%;
+}
+.pages_home .sectionGalleryPreview .galleryPreviewList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pages_home .sectionGalleryPreview .galleryPreviewList img {
+  width: 250px;
+  border-radius: 20px;
+  cursor: pointer;
 }/*# sourceMappingURL=styles.css.map */

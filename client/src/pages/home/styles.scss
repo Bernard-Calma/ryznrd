@@ -6,4 +6,15 @@
     .homePageLogo {
         border-radius: 50%;
     }
+
+    .sectionGalleryPreview {
+        .galleryPreviewList {
+            @include flex(row, true);
+
+            img {
+                @include imageDefault();
+                cursor: pointer;
+            }
+        }
+    }
 }

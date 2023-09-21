@@ -30,3 +30,9 @@ $font-small: 14px;
         align-items: center;
     }
 }
+
+
+@mixin imageDefault {
+    width: 250px;
+    border-radius: 20px;
+}
