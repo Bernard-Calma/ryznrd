@@ -2,24 +2,28 @@
 
 .pages_home {
     @include flex(column, true);
+    height: 100vh;
 
     .homePageLogo {
         border-radius: 50%;
     }
+}
 
-    .sectionGalleryPreview {
-        width: 100%;
-        // background-color: $black-extra-light;
-        text-align: center;
-        .galleryPreviewList {
-            @include flex(row, true);
-            gap: 25px;
 
-            img {
-                @include imageDefault();
-                cursor: pointer;
-            
-            }
+.sectionGalleryPreview {
+    @include flex(column, true);
+    width: 100%;
+    background-color: $black-light;
+    color: $text-color-reverse;
+    text-align: center;
+    .galleryPreviewList {
+        @include flex(row, true);
+        gap: 25px;
+
+        img {
+            @include imageDefault();
+            cursor: pointer;
+        
         }
     }
 }
