@@ -20,10 +20,34 @@
         @include flex(row, true);
         gap: 25px;
 
-        img {
-            @include imageDefault();
-            cursor: pointer;
-        
+
+        .previewListItem {
+            position: relative;
+
+            img {
+                @include imageDefault();
+                cursor: pointer;
+            
+            }
+
+            .previewToolTip {
+                position: absolute;
+                top: 0;
+                left: 10px;
+                height: auto;
+                border-radius: px;
+                overflow: hidden;
+                
+                p {
+                    margin: 0;
+                    padding: 5px 0;
+                    background-color: addTransparencyText($black-extra-light,FF);
+                    text-align: start; 
+                    font-size: $font-small; 
+              
+                }
+            }
         }
+
     }
 }

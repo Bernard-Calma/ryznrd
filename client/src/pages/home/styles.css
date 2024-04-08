@@ -40,10 +40,28 @@
   align-items: center;
   gap: 25px;
 }
-.sectionGalleryPreview .galleryPreviewList img {
+.sectionGalleryPreview .galleryPreviewList .previewListItem {
+  position: relative;
+}
+.sectionGalleryPreview .galleryPreviewList .previewListItem img {
   width: 250px;
   height: 300px;
   box-shadow: 0 0 5px 3px #666666;
   border-radius: 25px;
   cursor: pointer;
+}
+.sectionGalleryPreview .galleryPreviewList .previewListItem .previewToolTip {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  height: auto;
+  border-radius: px;
+  overflow: hidden;
+}
+.sectionGalleryPreview .galleryPreviewList .previewListItem .previewToolTip p {
+  margin: 0;
+  padding: 5px 0;
+  background-color: #66666601;
+  text-align: start;
+  font-size: 14px;
 }/*# sourceMappingURL=styles.css.map */

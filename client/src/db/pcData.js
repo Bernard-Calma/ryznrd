@@ -2,7 +2,7 @@ import {
     pc1, pc2, pc3
 } from "../assets/images"
 
-pcData = [
+export const pcData = [
     {
         name: "PC1",
         img: pc1,
