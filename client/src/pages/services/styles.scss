@@ -1,0 +1,6 @@
+@import "../../variables/Variables";
+
+.pages_services {
+    @include flexCenter;
+    border: 2px solid red
+}

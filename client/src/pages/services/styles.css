@@ -15,4 +15,12 @@ a {
 }
 .textLink:hover {
   text-decoration: underline;
-}/*# sourceMappingURL=stlyes.css.map */
+}
+
+.pages_services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid red;
+}/*# sourceMappingURL=styles.css.map */

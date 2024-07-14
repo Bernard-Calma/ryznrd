@@ -1,4 +1,4 @@
-import { pc1 } from "../../assets/images";
+import { pc1, pc2 } from "../../assets/images";
 
 const Gallery = () => {
     return(

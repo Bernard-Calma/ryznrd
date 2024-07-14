@@ -18,6 +18,7 @@ $font-small: 14px;
 
 @mixin flexCenter {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -36,6 +37,11 @@ $font-small: 14px;
     height: 300px;
     box-shadow: 0 0 5px 3px $black-extra-light;
     border-radius: 25px;
+}
+
+a {
+    color: unset;
+    text-decoration: unset;
 }
 
 .sectionTitle {

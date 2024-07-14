@@ -15,4 +15,9 @@ a {
 }
 .textLink:hover {
   text-decoration: underline;
-}/*# sourceMappingURL=stlyes.css.map */
+}
+
+.pages_available_list {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=styles.css.map */

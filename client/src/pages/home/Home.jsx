@@ -8,7 +8,7 @@ import { IconContext } from "react-icons";
 
 const Home = () => {
     return(
-        <div className="pages_home">
+        <div className="pages_home" id="pages_home">
             <img 
                 className="homePageLogo"
                 src={ryznrdLogo} 

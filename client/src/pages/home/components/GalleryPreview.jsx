@@ -5,7 +5,7 @@ import PreviewToolTip from "./PreviewTooltip";
 const GalleryPreview = () => {
     return (
         <section className="sectionGalleryPreview">
-            <h1 className="sectionTitle">GALLERY PREVIEW</h1>
+            <h1 className="sectionTitle">PREVIOUS BUILDS </h1>
             <ul className="galleryPreviewList">
                 {
                     pcData.map(pc => 
