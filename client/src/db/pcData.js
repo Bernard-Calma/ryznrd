@@ -5,6 +5,7 @@ import {
 export const pcData = [
     {
         name: "PC1",
+        price: 1500,
         img: pc1,
         pcCase: {
             brand: "Lian Li",
@@ -113,6 +114,7 @@ export const pcData = [
     },
     {
         name: "PC2",
+        price: 600,
         img: pc2,
         pcCase: {
             brand: "INWIN",
@@ -192,6 +194,7 @@ export const pcData = [
     },
     {
         name: "PC3",
+        price: 600,
         img: pc3,
         pcCase: {
             brand: "Musetex",

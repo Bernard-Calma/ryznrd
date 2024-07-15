@@ -1,7 +1,9 @@
 const PreviewToolTip = ({pc}) => {
     const {
         name,
+        price,
         cpu,
+        AIO,
         graphicsCard,
         memory,
         motherboard,
@@ -20,8 +22,9 @@ const PreviewToolTip = ({pc}) => {
     return(
         <div className="previewToolTip">
             <p>Case: {`${pcCase.brand} ${pcCase.model}`}</p>
-            <p>MOBO: {`${motherboard.brand} ${motherboard.model}`}</p>
+            <p>Motherboard: {`${motherboard.brand} ${motherboard.model}`}</p>
             <p>CPU: {`${cpu.brand} ${cpu.model}`}</p>
+            {AIO && <p>AIO: {`${AIO.brand} ${AIO.model} ${AIO.fanSize * AIO.fans}mm`}</p>}
             <p>RAM: {`${memoryInfo.brand} ${memoryInfo.model} ${memoryInfo.speed}MHZ ${memoryInfo.capacity}`}</p>
             <p>GPU: {`${graphicsCard.brand} ${graphicsCard.model}`}</p>
             <p>PSU: {`${powerSupply.brand} ${powerSupply.model}`}</p>
@@ -34,7 +37,7 @@ const PreviewToolTip = ({pc}) => {
                         ${storageItem.capacity >= 1000 ? storageItem.capacity/1000 + "TB" : storageItem.capacity + "GB"}`}</p>
                 )
             }
-            
+            <p>Sold: {`$${price}`}</p>
         </div>
     )
 }
