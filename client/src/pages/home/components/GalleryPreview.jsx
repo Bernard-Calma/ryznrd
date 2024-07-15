@@ -1,4 +1,3 @@
-import { pc1, pc2, pc3 } from "../../../assets/images";
 import { pcData } from "../../../db/pcData";
 import PreviewToolTip from "./PreviewTooltip";
 
