@@ -1,8 +1,8 @@
-import { pc1, pc2 } from "../../assets/images";
+import { pc1 } from "../../assets/images";
 
 const Gallery = () => {
     return(
-        <div className="pages_gallery">
+        <div className="pages_gallery" id="pages_gallery">
             <ul className="galleryList">
                 <div className="galleryListItemContainer">
                     <img 

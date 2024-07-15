@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Skranji:wght@400;700&display=swap");
+a {
+  color: unset;
+  text-decoration: unset;
+}
+
 .sectionTitle {
   font-size: 24px;
   font-family: "Skranji";
@@ -12,15 +17,18 @@
   text-decoration: underline;
 }
 
-.pages_home {
+.pages_home section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
-.pages_home .homePageLogo {
+.pages_home .sectionFrontPage .homePageLogo {
   border-radius: 50%;
+}
+.pages_home .sectionFrontPage .homePageLogo {
+  width: 24rem;
 }
 
 .sectionGalleryPreview {
@@ -55,13 +63,12 @@
   top: 0;
   left: 10px;
   height: auto;
-  border-radius: px;
+  border-radius: 2px;
   overflow: hidden;
 }
 .sectionGalleryPreview .galleryPreviewList .previewListItem .previewToolTip p {
   margin: 0;
   padding: 5px 0;
-  background-color: #66666601;
   text-align: start;
   font-size: 14px;
 }/*# sourceMappingURL=styles.css.map */

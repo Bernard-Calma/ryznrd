@@ -1,11 +1,18 @@
 @import "../../variables/Variables";
 
 .pages_home {
-    @include flex(column, true);
-    height: 100vh;
+    section {
+        @include flex(column, true);
+        height: 100vh;
+    }
+    .sectionFrontPage {
+        .homePageLogo {
+            border-radius: 50%;
+        }
 
-    .homePageLogo {
-        border-radius: 50%;
+        .homePageLogo {
+            width: 24rem;
+        }
     }
 }
 
@@ -35,13 +42,13 @@
                 top: 0;
                 left: 10px;
                 height: auto;
-                border-radius: px;
+                border-radius: 2px;
                 overflow: hidden;
                 
                 p {
                     margin: 0;
                     padding: 5px 0;
-                    background-color: addTransparencyText($black-extra-light,FF);
+                    // background-color: addTransparencyText($black-extra-light,10);
                     text-align: start; 
                     font-size: $font-small; 
               

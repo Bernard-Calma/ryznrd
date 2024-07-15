@@ -4,7 +4,7 @@ import PreviewToolTip from "./PreviewTooltip";
 
 const GalleryPreview = () => {
     return (
-        <section className="sectionGalleryPreview">
+        <section className="sectionGalleryPreview" id="sectionGalleryPreview">
             <h1 className="sectionTitle">PREVIOUS BUILDS </h1>
             <ul className="galleryPreviewList">
                 {

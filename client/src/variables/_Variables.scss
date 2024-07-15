@@ -61,7 +61,7 @@ a {
 @function addTransparencyText($color,$tranparency) {
     @if $tranparency == type-of($value: 'string') {
        @return #{$color+$tranparency}
-    }
+    };
 
     @if $tranparency < 10{
         @return #{$color+"0"+$tranparency}
