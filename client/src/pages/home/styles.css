@@ -22,7 +22,9 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+}
+.pages_home .sectionFrontPage {
+  min-height: 100vh;
 }
 .pages_home .sectionFrontPage .homePageLogo {
   border-radius: 50%;

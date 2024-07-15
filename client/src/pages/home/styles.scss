@@ -3,9 +3,9 @@
 .pages_home {
     section {
         @include flex(column, true);
-        height: 100vh;
     }
     .sectionFrontPage {
+        min-height: 100vh;
         .homePageLogo {
             border-radius: 50%;
         }
