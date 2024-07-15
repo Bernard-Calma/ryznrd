@@ -5,7 +5,7 @@ a {
 }
 
 .sectionTitle {
-  font-size: 24px;
+  font-size: 4.5em;
   font-family: "Skranji";
 }
 
@@ -22,9 +22,31 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.pages_home .sectionFrontPage {
   min-height: 100vh;
+}
+.pages_home .sectionServices, .pages_home .sectionGalleryPreview {
+  justify-content: space-between;
+}
+.pages_home .sectionServices {
+  background-color: #4D4D4D;
+  color: white;
+}
+.pages_home .sectionServices .columnList {
+  background-color: rgb(138, 138, 138);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0.75;
+  gap: 5em;
+  border: 2px rgb(134, 134, 134) solid;
+}
+.pages_home .sectionServices .columnList p {
+  width: 10em;
+  height: 10em;
+  padding: 5px;
+  border: 2px rgb(36, 36, 36) solid;
+  background-color: rgb(71, 71, 71);
 }
 .pages_home .sectionFrontPage .homePageLogo {
   border-radius: 50%;
@@ -32,35 +54,28 @@ a {
 .pages_home .sectionFrontPage .homePageLogo {
   width: 24rem;
 }
-
-.sectionGalleryPreview {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: #4D4D4D;
-  color: white;
+.pages_home .sectionGalleryPreview {
   text-align: center;
 }
-.sectionGalleryPreview .galleryPreviewList {
+.pages_home .sectionGalleryPreview .galleryPreviewList {
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 25px;
 }
-.sectionGalleryPreview .galleryPreviewList .previewListItem {
+.pages_home .sectionGalleryPreview .galleryPreviewList .previewListItem {
   position: relative;
 }
-.sectionGalleryPreview .galleryPreviewList .previewListItem img {
+.pages_home .sectionGalleryPreview .galleryPreviewList .previewListItem img {
   width: 250px;
   height: 300px;
   box-shadow: 0 0 5px 3px #666666;
   border-radius: 25px;
   cursor: pointer;
 }
-.sectionGalleryPreview .galleryPreviewList .previewListItem .previewToolTip {
+.pages_home .sectionGalleryPreview .galleryPreviewList .previewListItem .previewToolTip {
   position: absolute;
   top: 0;
   left: 10px;
@@ -68,7 +83,7 @@ a {
   border-radius: 2px;
   overflow: hidden;
 }
-.sectionGalleryPreview .galleryPreviewList .previewListItem .previewToolTip p {
+.pages_home .sectionGalleryPreview .galleryPreviewList .previewListItem .previewToolTip p {
   margin: 0;
   padding: 5px 0;
   text-align: start;

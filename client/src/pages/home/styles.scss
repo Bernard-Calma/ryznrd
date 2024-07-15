@@ -3,58 +3,79 @@
 .pages_home {
     section {
         @include flex(column, true);
+        min-height: 100vh;
+    }
+
+    .sectionServices, .sectionGalleryPreview {
+        justify-content: space-between;
+    }
+
+    .sectionServices {
+        background-color: $black-light;
+        color: $text-color-reverse;
+
+        .columnList {
+            background-color: rgb(138, 138, 138);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex: 0.75;
+            gap: 5em;
+            border: 2px rgb(134, 134, 134) solid;
+            p {
+                width: 10em;
+                height: 10em;
+                padding: 5px;
+                border: 2px rgb(36, 36, 36) solid;
+                background-color: rgb(71, 71, 71);
+            }
+        }
     }
     .sectionFrontPage {
-        min-height: 100vh;
         .homePageLogo {
             border-radius: 50%;
         }
-
         .homePageLogo {
             width: 24rem;
         }
     }
-}
 
-
-.sectionGalleryPreview {
-    @include flex(column, true);
-    width: 100%;
-    background-color: $black-light;
-    color: $text-color-reverse;
-    text-align: center;
-    .galleryPreviewList {
-        @include flex(row, true);
-        gap: 25px;
-
-
-        .previewListItem {
-            position: relative;
-
-            img {
-                @include imageDefault();
-                cursor: pointer;
-            
-            }
-
-            .previewToolTip {
-                position: absolute;
-                top: 0;
-                left: 10px;
-                height: auto;
-                border-radius: 2px;
-                overflow: hidden;
+    .sectionGalleryPreview {
+        text-align: center;
+        .galleryPreviewList {
+            color: $text-color-reverse;
+            @include flex(row, true);
+            gap: 25px;
+    
+    
+            .previewListItem {
+                position: relative;
+    
+                img {
+                    @include imageDefault();
+                    cursor: pointer;
                 
-                p {
-                    margin: 0;
-                    padding: 5px 0;
-                    // background-color: addTransparencyText($black-extra-light,10);
-                    text-align: start; 
-                    font-size: $font-small; 
-              
+                }
+    
+                .previewToolTip {
+                    position: absolute;
+                    top: 0;
+                    left: 10px;
+                    height: auto;
+                    border-radius: 2px;
+                    overflow: hidden;
+                    
+                    p {
+                        margin: 0;
+                        padding: 5px 0;
+                        // background-color: addTransparencyText($black-extra-light,10);
+                        text-align: start; 
+                        font-size: $font-small; 
+                  
+                    }
                 }
             }
         }
-
     }
 }
