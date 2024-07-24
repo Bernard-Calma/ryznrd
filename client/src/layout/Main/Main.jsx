@@ -6,7 +6,7 @@ const Main = () => {
     return(
         <main>
             <Home />
-            {/* <AvailableBuilds /> */}
+            <AvailableBuilds />
         </main>
     )
 }

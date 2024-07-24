@@ -1,7 +1,5 @@
-import "./styles.css";
-import Services from "./components/Services";
-import { GalleryPreview } from "./components";
-import FrontPage from "./components/FrontPage";
+import "./styles.css"
+import { GalleryPreview, FrontPage, Services } from "./components";
 
 
 

@@ -1,6 +1,6 @@
 const PreviewToolTip = ({pc}) => {
     const {
-        name,
+        // name,
         price,
         cpu,
         AIO,

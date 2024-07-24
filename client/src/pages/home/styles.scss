@@ -17,18 +17,40 @@
         .columnList {
             background-color: rgb(138, 138, 138);
             width: 100%;
+            padding: 5px;
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             flex: 0.75;
-            gap: 5em;
+            gap: 3em;
             border: 2px rgb(134, 134, 134) solid;
-            p {
-                width: 10em;
-                height: 10em;
-                padding: 5px;
-                border: 2px rgb(36, 36, 36) solid;
-                background-color: rgb(71, 71, 71);
+
+            .servicesPreview {
+                img {
+                    @include imageDefault();
+                    height: 200px;
+                    border-bottom-left-radius: 0;
+                    border-bottom-right-radius: 0;
+                }
+
+                .servicePreviewDescription {
+                    @include imageDefault();
+                    background-color: rgb(71, 71, 71);
+                    border: 2px rgb(36, 36, 36) solid;
+                    border-top: 0;
+                    border-top-right-radius: 0;
+                    border-top-left-radius: 0;
+                    height: 45px;
+                    margin: 0;
+                    align-content: center;
+     
+                    p {
+                        margin: 0;
+                        text-align: center;
+                        font-size: 0.8rem;
+                    }
+                }
             }
         }
     }
@@ -55,7 +77,6 @@
                 img {
                     @include imageDefault();
                     cursor: pointer;
-                
                 }
     
                 .previewToolTip {

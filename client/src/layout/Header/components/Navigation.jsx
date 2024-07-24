@@ -5,7 +5,7 @@ const Navigation = () => {
                 <a className="navListItem" href="#sectionFrontPage">Home</a>
                 <a className="navListItem" href="#sectionServices">Services</a>
                 <a className="navListItem" href="#sectionGalleryPreview">Gaming PC</a>
-                <a className="navListItem">About</a>
+                <a className="navListItem" href="#sectionFrontPage">About</a>
             </ul>
         </nav>
     )
